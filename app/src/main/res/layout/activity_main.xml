@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="20dp">
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Video Asistan" android:textSize="26sp" android:textStyle="bold" />
+
+        <TextView android:id="@+id/tvA11y" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_marginTop="12dp" />
+        <Button android:id="@+id/btnA11y" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:text="Erişilebilirlik iznini aç" />
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginTop="16dp" android:text="Edit uygulaması" />
+        <Spinner android:id="@+id/spEditor" android:layout_width="match_parent"
+            android:layout_height="48dp" />
+
+        <EditText android:id="@+id/etPrompt" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_marginTop="12dp"
+            android:hint="Talimat: örn. en hareketli sahneleri kes, geçiş ekle"
+            android:minLines="3" android:gravity="top" />
+
+        <Button android:id="@+id/btnStart" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_marginTop="12dp"
+            android:text="Düzenlemeyi başlat" />
+
+        <TextView android:id="@+id/tvStatus" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_marginTop="16dp" />
+    </LinearLayout>
+</ScrollView>
